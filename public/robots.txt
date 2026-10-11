@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neetstudyhub.sriaakula.workers.dev/sitemap.xml
