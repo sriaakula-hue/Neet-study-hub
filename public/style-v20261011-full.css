@@ -9,3 +9,17 @@
 .mock-toolbar,.mock-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.mock-toolbar{position:sticky;top:0;background:#f8faf4;padding:12px;z-index:3;border:1px solid #d6dfd6;border-radius:12px}.mock-toolbar strong{font-size:1.6rem;font-variant-numeric:tabular-nums}.answer.selected{background:#d8ebdf;border:2px solid #24634e}.mock-palette{display:grid;grid-template-columns:repeat(auto-fill,minmax(44px,1fr));gap:8px;margin-top:20px}.mock-number{padding:10px 0;min-height:44px}.mock-number.answered{background:#d8ebdf}.mock-number.flagged{background:#f5d894}.mock-number.current{outline:3px solid #24634e}.mock-scores{width:100%;border-collapse:collapse;margin:20px 0}.mock-scores th,.mock-scores td{padding:8px 4px;border-bottom:1px solid #d6dfd6;text-align:left}#mock-work h3{margin-top:20px}#mock-work .mock-actions{margin-top:20px}
 
 .chapter-directory{columns:2;column-gap:30px}.chapter-directory li{break-inside:avoid;margin:10px 0}@media(max-width:600px){.chapter-directory{columns:1}}
+
+/* Responsive navigation and comfortable study controls */
+header nav{flex-wrap:wrap;justify-content:flex-end}header .brand{flex-shrink:0}
+.mobile-menu{display:none}.study-shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;padding:8px 0 30px}.study-shortcuts a{display:flex;flex-direction:column;gap:7px;text-decoration:none;border:1px solid var(--line);border-radius:12px;background:white;padding:20px}.study-shortcuts span{font-size:14px;color:var(--green)}
+button,input,select{min-height:44px}button,.primary,.secondary{touch-action:manipulation}.answer{min-height:48px;line-height:1.5}section[id]{scroll-margin-top:20px}input,select{font-size:16px}nav a{display:inline-flex;align-items:center;min-height:44px}p,li,a,button{overflow-wrap:break-word}
+@media(max-width:760px){
+header:has(#main-navigation){display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;padding:18px 20px}
+header .brand{font-size:19px}.mobile-menu:not([hidden]){display:inline-flex;align-items:center;gap:10px;padding:10px 14px;font-size:15px}
+#main-navigation{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:6px;width:100%;text-align:left;font-size:15px;padding-top:10px;border-top:1px solid var(--line)}
+#main-navigation[hidden]{display:none}#main-navigation a{padding:8px 12px;background:#edf1e5;border-radius:8px;justify-content:flex-start}#main-navigation #account{grid-column:1/-1}
+main{padding:0 18px}.hero{padding:32px 0 24px;gap:24px}.hero h1{font-size:clamp(38px,10vw,58px);letter-spacing:-1.5px}.intro{font-size:17px;line-height:1.7}.hero .primary,.hero .secondary{display:block;text-align:center;margin:10px 0;padding:14px 18px}.hero-meta{line-height:1.9;margin-top:20px}.hero-art{height:230px}
+.study-shortcuts{grid-template-columns:1fr;padding:8px 0 24px;gap:10px}.study-shortcuts a{padding:16px 18px;flex-direction:row;justify-content:space-between;align-items:center;gap:12px}.study-shortcuts strong,.study-shortcuts span{font-size:14px}
+section{padding:32px 0}.section-head{margin-bottom:18px}.section-head h2{font-size:30px}.quiz-panel{padding:20px}.card{padding:22px}.card button{min-height:44px}.filters{grid-template-columns:1fr;gap:4px}.history-row{flex-wrap:wrap}.mock-toolbar{position:static}.mock-actions button{flex:1 1 130px}.mock-scores{font-size:14px}dialog{padding:24px;max-height:85dvh;overflow:auto}dialog h2{font-size:28px}.stats strong{font-size:28px}.closing{padding:30px 20px}footer{font-size:13px;line-height:1.7}
+}
